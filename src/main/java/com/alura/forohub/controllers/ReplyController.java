@@ -17,7 +17,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 @RestController
 @RequestMapping("/replies")
 @SecurityRequirement(name = "bearer-key")
-@Tag(name = "Respuestas", description = "Reply description")
+@Tag(name = "Respuestas")
 public class ReplyController {
 
     @Autowired

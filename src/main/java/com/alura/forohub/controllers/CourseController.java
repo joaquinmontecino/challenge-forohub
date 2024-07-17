@@ -21,7 +21,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 @RestController
 @RequestMapping("/courses")
 @SecurityRequirement(name = "bearer-key")
-@Tag(name = "Cursos", description = "Course description")
+@Tag(name = "Cursos")
 public class CourseController {
 
     @Autowired

@@ -23,7 +23,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 @RestController
 @RequestMapping("/topics")
 @SecurityRequirement(name = "bearer-key")
-@Tag(name = "Tópic", description = "Topic description")
+@Tag(name = "Tópico")
 public class TopicController {
 
     @Autowired
@@ -57,7 +57,7 @@ public class TopicController {
         return ResponseEntity.ok(topicService.getAllTopics(pageable));
     }
 
-    @GetMapping("/category/{id}")
+    @GetMapping("/course/{id}")
     @Operation(summary = "Lista todos los topicos de un curso")
     public ResponseEntity<Page<TopicDataDTO>> getTopicsByCourse(@PathVariable Long id,
                                                                   @PageableDefault(size = 5, sort = {"id"}) Pageable pageable){

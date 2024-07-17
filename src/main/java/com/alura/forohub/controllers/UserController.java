@@ -22,7 +22,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 @RestController
 @RequestMapping("/users")
 @SecurityRequirement(name = "bearer-key")
-@Tag(name = "Usuario", description = "User description")
+@Tag(name = "Usuario")
 public class UserController {
 
     @Autowired
